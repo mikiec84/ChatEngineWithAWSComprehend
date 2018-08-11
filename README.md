@@ -86,17 +86,45 @@ Follow these steps to test the app.
 
 Clone this repository under a local folder
 
-### Step 2 : Update PubNub keys
+### Step 2 : Update PubNub keys for chat UI
 
-Update the PubNub publish key for both the chat app instances for [John](https://github.com/shyampurk/ChatEngineWithAWSTranslate/blob/master/app/userJohn/scripts/chatTranslate.js#L3) and [Peter](https://github.com/shyampurk/ChatEngineWithAWSTranslate/blob/master/app/userPeter/scripts/chatTranslate.js#L3).
+Update the chat UI's PubNub publish key [here](https://github.com/shyampurk/ChatEngineWithAWSComprehend/blob/master/UI/scripts/chatComprehend.js#L3) and PubNub subscribe key [here](https://github.com/shyampurk/ChatEngineWithAWSComprehend/blob/master/UI/scripts/chatComprehend.js#L4) 
 
-Repeat the same steps for updating the PubNub subscribe key for [John](https://github.com/shyampurk/ChatEngineWithAWSTranslate/blob/master/app/userJohn/scripts/chatTranslate.js#L4) and [Peter](https://github.com/shyampurk/ChatEngineWithAWSTranslate/blob/master/app/userPeter/scripts/chatTranslate.js#L4).
+### Step 3 : Update PubNub keys for the dummy users
 
-### Step 3 : Launch the app instances
+There are five dummy users defined for the simulated session of this app. These users are represented by their individual NodeJS scripts.
 
-Now you can launch both the chat app instances for John and Peter and start chatting. Remember, the translation feature is only enabled for Peter while John can chat only in English. This is because AWS Translate currently supports translation to and from English only.
+1. [Moderator (Zika Advisor)](bot/app.js)
 
-<img src="screenshots/overallscreencast.gif" width="800">
+2. [Don](bot/users/userDon.js)
+
+3. [John](bot/users/userJohn.js)
+
+4. [Ron](bot/users/userRon.js)
+
+5. [Shaun](bot/users/userShaun.js)
+
+For the moderator, update the PubNub Publish and Subscribe Keys at the line 18 & 19 of the script file.
+
+For the remaining users, update the PubNub Publish and Subscribe Keys at the line 6 & 7 of the respective user's script file.
+
+### Step 4 : Launch the chat room UI 
+
+Now you are ready to launch the app instance. Before launchign the app make sure that the AWS Comprehend PubNub Function is running.
+
+To launch the UI chat room, you can open the [chat room HTML file](UI/zikaforum.html) in a browser. Once you do that you will notice that the user Peter has joined the chat. This is the human user which participates in teh chat. 
+
+---IMG---
+### Step 5 : Launch the chat session simulation
+
+To launch the simulation, start the [moderator bot](bot/app.js) under the NodeJS environment.
+
+    node app.js
+
+CAUTION : Before launchign the above command for the first time, make sure the install the node module dependencies
+
+    npm install
+
 
 Have fun!
 
