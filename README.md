@@ -9,7 +9,7 @@ For reference, you can check the documentation of [PubNub Chat Engine](https://w
 
 Here is how the simulated chat session runs. It is depicting a public health advisory chat room about Zika Virus, and it generates "HeatTags" for all the locations mentioned in the chat messages. This indirectly indicates the impact and spread of Zika Virus in those locations. 
 
-<img src="screenshots/app-screencast.gif" width="600>
+<img src="screenshots/app-screencast.gif" width="600">
 
 You can follow the sections below to build this example chat app in no time. However, before you begin, you must have an account in PubNub and AWS.
 
@@ -50,7 +50,7 @@ Follow [these steps](https://docs.aws.amazon.com/comprehend/latest/dg/setting-up
 
 Download the credentials file for the IAM user and save it. This file contains the AWS ACCESS KEY and AWS SECRET KEY.
 
----IMG---
+<img src="screenshots/step1-awsIAM.png" width="800">
 
 ## [Set Up PubNub Function for AWS Comprehend](#set-up-pubnub-function-for-aws-comprehend)
 
@@ -62,11 +62,16 @@ Head over to your PubNub dashboard and select the "ChatEngine App" app. Follow t
 
 <img src="screenshots/step1-pubnubfunction.png" width="800">
 
-### Step 2 : Deploy the function
+### Step 2 : Create a new module under functions
 
-Use the following parameters for creating the module and function
+Create a new module within the functions tab by using the folloiing parameters.
 
-<img src="screenshots/step2-create-module.png" width="350"><img src="screenshots/step2-create-function.png" width="350">
+TBD
+
+Once done, you will have two modules. First one is created by default as part of ChatEngine App and the new one is created in this step.
+
+<img src="screenshots/step3-pubnubfunction.png" width="800">
+
 
 ### Step 3 : Launch the function
 
@@ -76,7 +81,7 @@ Add your AWS ACCESS KEY and AWS SECRET KEY (Step 2 of "Set Up AWS Comprehend Ser
 
 <img src="screenshots/step3-addSecrets.png" width="800">
 
-Now you can launch the function. 
+Now start both the modules within the function. 
 
 ## [App Deployment and Running The Simulated Chat Session](#app-deployment-and-running-the-simulated-chat-session)
 
@@ -114,7 +119,7 @@ Now you are ready to launch the app instance. Before launchign the app make sure
 
 To launch the chat room UI, you can open the [chat room HTML file](UI/zikaforum.html) in a browser. Once you do that you will notice that the user named "Peter" has joined the chat. This is the human user which participates in the chat. 
 
----IMG---
+<img src="screenshots/step4-appdeployment.png" width="350">
 
 ### Step 5 : Launch the chat session simulation
 
