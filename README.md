@@ -66,13 +66,13 @@ Head over to your PubNub dashboard and select the "ChatEngine App" app. Follow t
 
 Create a new module within the functions tab by using the following parameters as mentioned in the form.
 
-Enter a module name : AWS Comprehend<br/>
+Enter a module name : Amaon Comprehend<br/>
 Enter a module description : Use natural language classification to find locations in text<br/>
 Which keyset should this module go under? : ChatEngine keyset
 
 Under the module, create a new PubNub function by using the following parameters as mentioned in the form.
 
-Function Name : AWS Comprehend<br/>
+Function Name : Amazon Comprehend<br/>
 Select an event type : Before Publish of Fire
 
 Once done, you will have two modules. First one is created by default as part of ChatEngine App and the new one is created in this step.
