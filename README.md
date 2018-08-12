@@ -64,24 +64,34 @@ Head over to your PubNub dashboard and select the "ChatEngine App" app. Follow t
 
 ### Step 2 : Create a new module under functions
 
-Create a new module within the functions tab by using the folloiing parameters.
+Create a new module within the functions tab by using the following parameters as mentioned in the form.
 
-TBD
+Enter a module name : AWS Comprehend
+
+Enter a module description : Use natural language classification to find locations in text
+
+Which keyset should this module go under? : ChatEngine keyset
+
+Under the module, create a new PubNub function by using the following parameters as mentioned in the form.
+
+Function Name : AWS Comprehend
+
+Select an event type : Before Publish of Fire
 
 Once done, you will have two modules. First one is created by default as part of ChatEngine App and the new one is created in this step.
 
 <img src="screenshots/step3-pubnubfunction.png" width="800">
 
 
-### Step 3 : Launch the function
+### Step 3 : Launch the PubNub function
 
-Copy the [AWS Comprehend backend code](https://github.com/shyampurk/ChatEngineWithAWSTranslate/blob/master/function/AWS%20Transalte%20backend.js) and paste it in the code window. 
+Copy the [AWS Comprehend backend code](https://github.com/shyampurk/ChatEngineWithAWSTranslate/blob/master/function/AWS%20Transalte%20backend.js) and paste it in the code window of the newly created PubNub function in previous step. 
 
 Add your AWS ACCESS KEY and AWS SECRET KEY (Step 2 of "Set Up AWS Comprehend Service") in the My Secrets vault as shown below. 
 
 <img src="screenshots/step3-addSecrets.png" width="800">
 
-Now start both the modules within the function. 
+Now start both the modules within the functions tab. 
 
 ## [App Deployment and Running The Simulated Chat Session](#app-deployment-and-running-the-simulated-chat-session)
 
@@ -127,7 +137,7 @@ To launch the simulation, start the [moderator bot](bot/app.js) under the NodeJS
 
     node app.js
 
-CAUTION : Before launchign the above command for the first time, make sure the install the node module dependencies
+CAUTION : Before launching the above command for the first time, make sure the install the node module dependencies
 
     npm install
 
