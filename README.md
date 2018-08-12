@@ -9,7 +9,7 @@ For reference, you can check the documentation of [PubNub Chat Engine](https://w
 
 Here is how the simulated chat session runs. It is depicting a public health advisory chat room about Zika Virus, and it generates "HeatTags" for all the locations mentioned in the chat messages. This indirectly indicates the impact and spread of Zika Virus in those locations. 
 
------APP SCREENSHOT------
+<img src="screenshots/app-screencast.gif" width="600>
 
 You can follow the sections below to build this example chat app in no time. However, before you begin, you must have an account in PubNub and AWS.
 
@@ -50,7 +50,7 @@ Follow [these steps](https://docs.aws.amazon.com/comprehend/latest/dg/setting-up
 
 Download the credentials file for the IAM user and save it. This file contains the AWS ACCESS KEY and AWS SECRET KEY.
 
---IMG--
+---IMG---
 
 ## [Set Up PubNub Function for AWS Comprehend](#set-up-pubnub-function-for-aws-comprehend)
 
@@ -72,7 +72,7 @@ Use the following parameters for creating the module and function
 
 Copy the [AWS Comprehend backend code](https://github.com/shyampurk/ChatEngineWithAWSTranslate/blob/master/function/AWS%20Transalte%20backend.js) and paste it in the code window. 
 
-Add your AWS ACCESS KEY and AWS SECRET KEY (Step 2 of "Set Up AWS Translate Service") in the My Secrets vault as shown below. 
+Add your AWS ACCESS KEY and AWS SECRET KEY (Step 2 of "Set Up AWS Comprehend Service") in the My Secrets vault as shown below. 
 
 <img src="screenshots/step3-addSecrets.png" width="800">
 
@@ -112,9 +112,10 @@ For the remaining users, update the PubNub Publish and Subscribe Keys at the lin
 
 Now you are ready to launch the app instance. Before launchign the app make sure that the AWS Comprehend PubNub Function is running.
 
-To launch the UI chat room, you can open the [chat room HTML file](UI/zikaforum.html) in a browser. Once you do that you will notice that the user Peter has joined the chat. This is the human user which participates in teh chat. 
+To launch the chat room UI, you can open the [chat room HTML file](UI/zikaforum.html) in a browser. Once you do that you will notice that the user named "Peter" has joined the chat. This is the human user which participates in the chat. 
 
 ---IMG---
+
 ### Step 5 : Launch the chat session simulation
 
 To launch the simulation, start the [moderator bot](bot/app.js) under the NodeJS environment.
