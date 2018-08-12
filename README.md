@@ -122,7 +122,7 @@ For the remaining users, update the PubNub Publish and Subscribe Keys at the lin
 
 ### Step 4 : Launch the chat room UI 
 
-Now you are ready to launch the app instance. Before launchign the app make sure that the AWS Comprehend PubNub Function is running.
+Now you are ready to launch the app instance. Before launching the app make sure that the AWS Comprehend PubNub Function is running.
 
 To launch the chat room UI, you can open the [chat room HTML file](UI/zikaforum.html) in a browser. Once you do that you will notice that the user named "Peter" has joined the chat. This is the human user which participates in the chat. 
 
