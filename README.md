@@ -42,9 +42,9 @@ Now your app infrastucture is created. Head over to the next section for setting
 
 Follow these steps to setup your AWS Comprehend service
 
-### Step 1 : Setup an IAM user to access AWS Translate service
+### Step 1 : Setup an IAM user to access AWS Comprehend service
 
-Follow [these steps](https://docs.aws.amazon.com/comprehend/latest/dg/setting-up.html) to create an IAM user for AWS Translate. Make sure that the IAM user has full permissions for accessing AWS Comprehend service.
+Follow [these steps](https://docs.aws.amazon.com/comprehend/latest/dg/setting-up.html) to create an IAM user for AWS Comprehend. Make sure that the IAM user has full permissions for accessing AWS Comprehend service.
 
 ### Step 2 : Download the IAM user credentials
 
