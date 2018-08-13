@@ -1,8 +1,8 @@
 # A ChatRoom With Topic Discovery Based on Locations
 
-Follow this README to build your forum chat room with the help of PubNub ChatEngine and AWS Comprehend. This forum chat room, provides the functionality of a chat room with the ability to suggest topics based on locations. 
+Follow this README to build your forum chat room with the help of PubNub ChatEngine and AWS Comprehend. This forum chat room provides the functionality of a chat room with the ability to suggest topics based on locations. 
 
-This repository contains the demo application for this forum chat room, along with a simulated chat session between a groupl of users. The source code for this chat app is in Javascript. Some level of familiarity with NodeJS, JQuery and standard Javascript language is expected.
+This repository contains the demo application for this forum chat room, along with a simulated chat session between a group of users. The source code for this chat app is in Javascript. Some level of familiarity with NodeJS, JQuery and standard Javascript language is expected.
  
 For reference, you can check the documentation of [PubNub Chat Engine](https://www.pubnub.com/products/chatengine/), [PubNub Functions](https://www.pubnub.com/products/functions/) and [AWS Comprehend](https://aws.amazon.com/comprehend/), which are the main components of this app. 
 
@@ -66,7 +66,7 @@ Head over to your PubNub dashboard and select the "ChatEngine App" app. Follow t
 
 Create a new module within the functions tab by using the following parameters as mentioned in the form.
 
-Enter a module name : Amaon Comprehend<br/>
+Enter a module name : Amazon Comprehend<br/>
 Enter a module description : Use natural language classification to find locations in text<br/>
 Which keyset should this module go under? : ChatEngine keyset
 
@@ -82,7 +82,7 @@ Once done, you will have two modules. First one is created by default as part of
 
 ### Step 3 : Launch the PubNub function
 
-Copy the [AWS Comprehend backend code](https://github.com/shyampurk/ChatEngineWithAWSTranslate/blob/master/function/AWS%20Transalte%20backend.js) and paste it in the code window of the newly created PubNub function in previous step. 
+Copy the [AWS Comprehend backend code](function/aws_comprehend.js) and paste it in the code window of the newly created PubNub function in previous step. 
 
 Add your AWS ACCESS KEY and AWS SECRET KEY (Step 2 of "Set Up AWS Comprehend Service") in the My Secrets vault as shown below. 
 
@@ -116,9 +116,9 @@ There are five dummy users defined for the simulated session of this app. These 
 
 5. [Shaun](bot/users/userShaun.js)
 
-For the moderator, update the PubNub Publish and Subscribe Keys at the line 18 & 19 of the script file.
+For the moderator, update the PubNub Publish and Subscribe Keys at line 18 & 19 of the script file.
 
-For the remaining users, update the PubNub Publish and Subscribe Keys at the line 6 & 7 of the respective user's script file.
+For the remaining users, update the PubNub Publish and Subscribe Keys at line 6 & 7 of the respective user's script file.
 
 ### Step 4 : Launch the chat room UI 
 
