@@ -92,7 +92,7 @@ Now start both the modules within the functions tab.
 
 ## [App Deployment and Running The Simulated Chat Session](#app-deployment-and-running-the-simulated-chat-session)
 
-Follow these steps to test the app.
+Follow these steps to test the app on your computer. NodeJS environment must be available to run this app. 
 
 ### Step 1 : Clone this repository
 
