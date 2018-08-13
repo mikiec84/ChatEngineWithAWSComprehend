@@ -3,8 +3,8 @@
 let ChatEngineCore = require('chat-engine');
 
 const ChatEngine = ChatEngineCore.create({
-    publishKey: 'pub-c-970b2eef-0e4c-4a01-8c0e-5f0b05dc7591',
-    subscribeKey: 'sub-c-58802186-79c6-11e8-a43f-d6f8762e29f7'
+    publishKey: 'PASTE YOUR PUBLISH KEY',
+    subscribeKey: 'PASTE YOUR SUBSCRIBE KEY'
 });
 
 let homeChat;
